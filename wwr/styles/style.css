@@ -221,6 +221,93 @@ nav {
     grid-row: 2/3;
 }
 
+
+/* RIVERSSSS PAGEEEEEEEEEE */
+.river-grid {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: repeat(9, 1fr);
+}
+.idaho-title, .utah-title, .arizona-title {
+    color: black;
+    background-color: #6D3D14;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.8em;
+    font-weight: 400;
+    padding: 1em;
+    text-align: center; 
+    border-top: 10px double;
+    border-bottom: 10px double;
+}
+.idaho-paragraph, .utah-paragraph, .arizona-paragraph {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 75%;
+    margin: 10px 10px 20px;
+}
+#arizona-bottom {
+    padding-bottom: 50px;
+}
+.idaho-title {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.idaho-paragraph {
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+#big-idaho {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+#little-1-idaho {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+#little-2-idaho {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.utah-title {
+    grid-column: 1/4;
+    grid-row: 4/5;
+}
+.utah-paragraph {
+    grid-column: 2/3;
+    grid-row: 5/7;
+}
+#big-utah {
+    grid-column: 1/2;
+    grid-row: 5/7;
+}
+#little-1-utah {
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+#little-2-utah {
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
+.arizona-title {
+    grid-column: 1/4;
+    grid-row: 7/8;
+}
+.arizona-paragraph {
+    grid-column: 2/3;
+    grid-row: 8/10;
+}
+#big-arizona {
+    grid-column: 1/2;
+    grid-row: 8/10;
+}
+#little-1-arizona {
+  grid-column: 3/4;
+  grid-row: 8/9;
+}
+#little-2-arizona {
+  grid-column: 3/4;
+  grid-row: 9/10;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
