@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Site | Home</title>
+    <title>Personal Site | Back Stage</title>
 </head>
 <body>
     <div id="content">
@@ -14,136 +14,29 @@
                 <img class="logo" src="images/Logo.png" alt="Personal Logo">
             </a>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="frontcode.html">Rivers</a>
-                <a href="backcode.html">Site Plan</a>
+              <a href="index.html">Home</a>
+              <a href="frontcode.html">Main Stage</a>
+              <a href="backcode.html">Back Stage</a>
             </nav>
         </header>
-      <main id="faqs-grid">
-        <!-- this is the left side of the faqs -->
-        <div class="left-faqs">
-          <!-- this is the feedback blurb on top of the form -->
-          <h2 class="feedback-title">/ feedback</h2>
-          <p class="feedback-paragraph">
-            I would love to hear back from you! I am updating this website as
-            often as I complete new projects. I want to continue to improve my
-            website and hone my skills. I am actively learning and willing to
-            grow with any type of feedback that is given. Leave your name and
-            e-mail address with some feedback. Any feedback will be greatly
-            appreciated.
-          </p>
-          <!-- this is the form-->
-          <div id="feedback">
-            <form action="/my-handling-form-page" method="post">
-              <h2>Reach out to me!</h2>
-              <ul>
-                <li>
-                  <label for="name">Name:</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="user_name"
-                    value="Your Name"
-                  />
-                </li>
-                <li>
-                  <label for="mail">E-mail Address:</label>
-                  <input
-                    type="email"
-                    id="mail"
-                    name="user_email"
-                    value="@gmail.com"
-                  />
-                </li>
-                <li>
-                  <label for="msg">Comments/Suggestions:</label>
-                  <textarea id="msg" name="user_message">
-Feedback here</textarea
-                  >
-                </li>
-                <li class="button">
-                  <button type="submit">Sumbit</button>
-                </li>
-              </ul>
-            </form>
-            <script>
-              // get the feedback div element so we can do something with it.
-              const feedbackElement = document.getElementById("feedback");
-              // get the form so we can read what was entered in it.
-              const formElement = document.forms[0];
-              // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-              formElement.addEventListener("submit", function (e) {
-                // stop the form from doing the default action
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML =
-                  "Hello " +
-                  formElement.user_name.value +
-                  "! Thank you for your message. We will get back with you as soon as possible!";
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle("moveDown");
-              });
-            </script>
-          </div>
-          <!-- this is the 2 picture -->
-          <div class="faq-pic">
-            <img
-              class="faq-img-1"
-              src="https://cdn.glitch.global/88dd64cf-d9f5-40a4-8dd6-d078c8577549/telephone-pic.jpg?v=1644655034680"
-              alt="retro telephone with cord on white background"
-            />
-            <img
-              class="faq-img-2"
-              src="https://cdn.glitch.global/88dd64cf-d9f5-40a4-8dd6-d078c8577549/feedback-pic.jpg?v=1644655034513"
-              alt="the word [feedback] placed in a scrabble board"
-            />
-          </div>
-        </div>
-        <!-- this is the right side of the faqs page -->
-        <div class="right-faqs">
-          <!-- this is the faqs question and answers -->
-          <h2 id="faqs-q1">/ why create this site?</h2>
-          <p id="faqs-a1">
-            Being a computer major has me creating many projects. Making a
-            personal website that benefits my future career would be useful. I
-            can showcase my work and progress, even the website itself can be
-            something on its own to showcase. As I continue with my education
-            and learn new skills, I can edit my website as I go to keep it up to
-            date. For now, my page will be a jumble of many small projects, but
-            as I get deeper into my major, I will have bigger projects that will
-            be able to showcase my true capabilities. How else would I be able
-            to show my future employer everything I can do in one place? The
-            simple answer is creating a website that holds all the information
-            they need to know about me.
-          </p>
-          <!-- this is the faqs question and answers -->
-          <h2 id="faqs-q2">/ how often do I update the website?</h2>
-          <p id="faqs-a2">
-            I am updating this website every couple of weeks. Every couple of
-            weeks I create something new and then with the new project I upload
-            it to the website. I am not going to post everything I have created,
-            just the projects that show improvement and progress in my learning.
-            If there is something specific you would like to see, just submit
-            the suggestion on the left.
-          </p>
-          <!-- this is the faqs question and answers -->
-          <h2 id="faqs-q3">/ who is the intended audience?</h2>
-          <p id="faqs-a3">
-            Trying to locate everything I have created is going to be hard.
-            Especially, if I have some projects on Git Hub, saved locally,
-            uploaded on social media (i.e., LinkedIn). Having one spot for all
-            projects will make it easy for me to showcase everything I am
-            capable of. I plan on choosing some of the projects I have created
-            and publishing them on my website for easy reference.
-          </p>
-        </div>
+      <main id="front-grid">
+        <h2 class="explanation-title"> Explanation</h2>
+        <p class="explanation-paragraph">
+          Below you will find the results of the code that was shown in the Main Stage section. 
+          If you have a chance, try out the code yourself. Maybe even try to find ways to make it 
+          more effective or see what happens with different inputs.<br>
+          <br>To see the code that made these results, navigate to the Main Stage.<br>
+        </p>
+        <h2 class="code1-title"> Menu and Prices</h2>
+        <img src="images/menu results.png" alt="menu results">
+        <h2 class="code2-title"> MadLibs</h2>
+        <img src="images/lib results.png" alt="adlib results">
+        <h2 class="code3-title"> Wind and Chill</h2>
+        <img src="images/wind results.png" alt="wind results">
       </main>
       <footer>
         <h3>Personal Site &copy; 2022 - Natelie Fonnesbeck</h3>
-        <h3><a href="site-plan-rafting.html">Site Plan</a></h3>
-        <h3><a href="contactus.html">Contact Us</a></h3>
+        <h3><a href="site-plan.html">Site Plan</a></h3>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">

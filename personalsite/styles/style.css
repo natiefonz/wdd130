@@ -1,7 +1,11 @@
 #content {
     max-width: 1600px;
-    margin: 0 auto;
+
     font-size: 110%;
+}
+
+main {
+    margin: 25px 10%;
 }
 
 nav a {
@@ -13,9 +17,10 @@ nav a {
 }
 
 header {
-    background-color: #5d576b;
+    background-color: #3d0000;
     display: grid;
     grid-template-columns: 150px auto;
+    margin: 0;
 }
 
 #background {
@@ -23,6 +28,12 @@ header {
     background-color: #6E8894;
     grid-column: 1/11;
     grid-row: 4/9;
+}
+
+h2{
+    background: #3c4d19;
+    color: #d1d0c7;
+    padding: 15px 45px;
 }
 
 body {
@@ -33,7 +44,7 @@ body {
 }
 
 footer {
-    background-color: #5d576b;
+    background-color: #3d0000;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
@@ -41,17 +52,24 @@ footer {
     align-items: center;
 }
 
+p{
+    background-color: #5d576b;
+    color: #d1d0c7;
+    padding: 25px;
+    text-align: center;
+}
+
 footer h3 {
-    color: #061538;
+    color: #d1d0c7;
 }
 
 footer a {
-    color: #061538;
+    color: #d1d0c7;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #061538;
+    color: #d1d0c7;
 }
 
 .logo {
@@ -71,12 +89,19 @@ footer h3 a:hover {
 
 footer .social img {
     padding-top: 15px;
+    width: 62px;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
 }
+
+#NAT {
+    width: 400px;
+    margin: 0px 400px;
+}
+
 
 @media screen and (max-width: 900px) {
     .home-grid {
